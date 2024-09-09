@@ -2,7 +2,9 @@
 /*
  * Basic LKM to hook Netfilter hook and then release. 
  * This LKM will drop all UDP packets to port 54.
-/* Standard headers for LKMs */
+ */
+
+// Standard headers for LKMs
 
 
 #include <linux/init.h>    /* Needed for the macros */
