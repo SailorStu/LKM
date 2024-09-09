@@ -15,7 +15,11 @@ sudo apt install clang llvm libelf-dev libbpf-dev libpcap-dev build-essential li
 Install kernel headers
 sudo apt-get -y install linux-headers-$(uname -r)
 
+nflkm_hook.c:
 
+This example will also use Netfilter to set a pre-routing hook on IPv4. It will drop all UDP packets sent
+to host:54, while loaded. You can test using netcat to listen on 0.0.0.0:54 and then externally send a UDP 
+packet to Host:54. 
 
 readshadow.c:
 
